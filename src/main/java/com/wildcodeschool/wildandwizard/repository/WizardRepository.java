@@ -7,6 +7,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
+// annotation nécessaire à la prise en compte par Spring Boot
+@Repository
 public class WizardRepository implements WizardDao {
 
     private static List<Wizard> wizards = new ArrayList<>(
